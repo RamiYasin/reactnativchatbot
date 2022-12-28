@@ -1,0 +1,67 @@
+import React from 'react';
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import { Button } from 'react-native-paper';
+import useHomeController from '~/screens/MenueScreen/MenueScreenController';
+import MenueController from "~/screens/MenueScreen/MenueScreenController";
+
+const HomeScreen = () => {
+    const { onPressLogout, user, chatbotKey } = MenueController();
+
+    return (
+        <SafeAreaView style={styles.textItem}>
+            <Text>Email: {user?.email} </Text>
+            <Text>
+                User:
+                {user?.firstName} {user?.lastName}
+            </Text>
+            <Text>chatbotKey: {chatbotKey}</Text>
+            <Button mode="contained" onPress={onPressLogout}>
+                Logout
+                {user?.firstName} {user?.lastName}
+            </Button>
+        </SafeAreaView>
+    );
+};
+
+const styles = StyleSheet.create({
+    textItem: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+});
+
+export default HomeScreen;
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+
+import { SafeAreaView, StyleSheet, Text } from 'react-native';
+import React from 'react';
+import { Button } from 'react-native-paper';
+import useLoginController from '~/screens/LoginScreen/Login.controller';
+
+const Login = () => {
+  const { onPressLogin } = useLoginController();
+
+  return (
+    <SafeAreaView style={styles.textItem}>
+      <Text>Welcome :)</Text>
+      <Button mode="contained" onPress={onPressLogin}>
+        Login
+      </Button>
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  textItem: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export default Login;

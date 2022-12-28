@@ -1,0 +1,82 @@
+[
+    {
+        "identity" : "User", 
+        "messages" : [   
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:01:04.753Z"
+                },
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:03:04.753Z"
+                }          
+        ],
+        "lastActive" : "2022-12-11T12:03:04.753Z",
+        "states" : 0
+    },
+    {
+        "identity" : "PSE melibo", 
+        "messages" : [
+            
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:01:04.753Z"
+                },
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:03:04.753Z"
+                }
+            
+        ],
+        "lastActive" : "2022-12-12T12:03:04.753Z",
+        "states" : 1
+    },
+    {
+        "identity" : "User", 
+        "messages" : [
+            
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:01:04.753Z"
+                },
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:03:04.753Z"
+                }
+            
+        ],
+        "lastActive" : "2022-12-13T12:03:04.753Z",
+        "states" : 2
+    },
+    {
+        "identity" : "User", 
+        "messages" : [
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:01:04.753Z"
+                },
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-14T12:03:04.753Z"
+                } 
+        ],
+        "lastActive" : "2022-12-16T12:03:04.753Z",
+        "states" : 2
+    },
+    {
+        "identity" : "PSE melibo", 
+        "messages" : [
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:01:04.753Z"
+                },
+                {
+                    "content" : "hello",
+                    "date" : "2022-12-10T12:03:04.753Z"
+                }  
+        ],
+        "lastActive" : "2022-12-16T12:03:04.753Z",
+        "states" : 1
+    }   
+]
+
